@@ -4,16 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "frontend": "fis3 server start --type jello && fis3 release -w", 
-    "backend": "fis3 release backend -w",
-    "commit": "fis3 release commit",
-    "stop": "fis3 server stop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "fis3-hook-commonjs": "^0.1.14",
-    "fis3-server-jello": "0.0.10"
-  }
+  "author": "candyHuang",
+  "license": "MIT",
+  "dependencies": {}
 }
