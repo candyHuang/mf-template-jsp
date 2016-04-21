@@ -1,0 +1,45 @@
+@import "static/common/1.0.0/app_style/_variables.scss";
+
+.main-header {
+	height: $layout-header-height;
+	margin-left: $layout-aside-width;
+
+    border-bottom: 1px solid $primary-border-color;
+    background-color: #fff;
+	> .navbar-static-top {
+		height: 100%;
+		min-height: 100%;
+		margin: 0;
+	}
+}
+
+
+.sub-logo {
+    padding: 0 20px;
+    line-height: $layout-header-height;
+	font-size: 16px;
+	font-weight: bold;
+    color: $header-color;
+	&:hover {
+		text-decoration: none;
+		color: #337ab7;
+	}
+}
+
+.navbar-custom-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	li {
+		border-left: 1px solid #ddd;
+		>a {
+			padding: 0 20px;
+    		color: $header-color;
+    		line-height: $layout-header-height - 1px;
+			&:hover {
+				background-color: #f8f8f8;
+			}
+
+		}
+	}
+}

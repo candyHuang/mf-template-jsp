@@ -1,8 +1,7 @@
 /**
- * 声明依赖
- * @require dialog.css
+ *  遮罩
  */
-var _loading = (function($) {
+exports.loading = (function($) {
     var _this = {},
         $el;
 
@@ -28,8 +27,3 @@ var _loading = (function($) {
 
     return _this
 })($)
-
-// 遮罩
-exports.loading = function(msg) {
-	_loading.open();
-}

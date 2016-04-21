@@ -1,0 +1,166 @@
+<div class="content-header">
+    <ol class="breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">发车操作</a></li>
+        <li class="active">待发车列表</li>
+    </ol>
+</div>
+<div class="content-body">
+    <div class="alert alert-warning" role="alert">
+        住：班次到达截止时间，即会锁定所有外来订单。请商家在锁定时间之后到发车的时间范围内 触发发车操作。发车后会短信通知游客司机上车信息。
+    </div>
+    <div class="tablelist-header clear">
+        <div class="pull-left">
+            <h4>车辆列表</h4>
+        </div>
+
+    </div>
+    <div class="tablelist-body">
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>路线名称</th>
+                    <th>路线状态</th>
+                    <th>发车时间</th>
+                    <th>截止时间</th>
+                    <th>待分配客人</th>
+                    <th width="120px">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>成都-峨眉山 常规车</td>
+                    <td>激活</td>
+                    <td>2016-4-1 7：00</td>
+                    <td>14小时前</td>
+                    <td>21</td>
+                    <td>
+                        <div class="btn-group btn-group-sm" role="group">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#dialog">发车</button>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>456</td>
+                    <td>成都-峨眉山 常规车</td>
+                    <td>激活</td>
+                    <td>2016-4-1 7：00</td>
+                    <td>14小时前</td>
+                    <td>21</td>
+                    <td>
+                        <div class="btn-group btn-group-sm" role="group">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#dialog">发车</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>789</td>
+                    <td>成都-峨眉山 常规车</td>
+                    <td>激活</td>
+                    <td>2016-4-1 7：00</td>
+                    <td>14小时前</td>
+                    <td>21</td>
+                    <td>
+                        <div class="btn-group btn-group-sm" role="group">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#dialog">发车</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">发车设置</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>待发车时间</th>
+                            <th>对应路线</th>
+                            <th>包含班次</th>
+                            <th>待验票总数</th>
+                            <th>发车时间</th>
+                            <th>待验票数量</th>
+                            <th>已选择车座位容量</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2016-12-03</td>
+                            <td>成都-峨眉山常规车</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>12:00</td>
+                            <td>1</td>
+                            <td>23</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>分配车辆型号</th>
+                            <th>分配车牌&司机</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select name="" id="">
+                                    <option value="1">马萨拉蒂</option>
+                                    <option value="2">奔驰</option>
+
+                                </select>
+                                <select name="" id="">
+                                    <option value="1">VINO（每车10座）</option>
+                                    <option value="2">GLA （每车8座）</option>
+
+                                </select>
+
+
+                            </td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="1">选择车牌号</option>
+                                    <option value="2">川A15134</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="1">选择绑定司机</option>
+                                    <option value="2">猴儿</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-default">添加新车</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary">发车</button>
+
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
