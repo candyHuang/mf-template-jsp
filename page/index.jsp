@@ -14,8 +14,8 @@
     <fis:require id="static/lib/jquery/1.11.3/jquery.min.js" />
     <fis:require id="static/lib/bootstrap/3.3.5/bootstrap.js" />
     <fis:require id="static/lib/bootstrap/3.3.5/bootstrap.scss" />
-    <fis:require id="static/common/1.0.0/app.scss" />
-    <fis:require id="static/common/1.0.0/app.js" />
+    <fis:require id="static/common/app.scss" />
+    <fis:require id="static/common/app.js" />
 
 
     <fis:script>
