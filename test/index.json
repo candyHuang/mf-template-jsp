@@ -1,18 +1,13 @@
 {
-	"name": "candy",
-	"age": 26,
-	"list": [
+	"ctitle": "@ctitle",
+    "csentence": "@csentence",
+    "cparagraph": "@cparagraph",
+    "cname": "@cname",
+    "float": "@float",
+	"list|2-5": [
 		{
-			"name": "once",
-			"age": 25
-		},
-		{
-			"name": "chw",
-			"age": 30
-		},
-		{
-			"name": "fouber",
-			"age": 18
+			"name": "@cname",
+			"age": "@integer"
 		}
 	]
 }

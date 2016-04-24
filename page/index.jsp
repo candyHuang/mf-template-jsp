@@ -9,21 +9,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<title>index</title>
-	<%-- 使用<fis:require>替代传统<link href>、<script src>标签来加载静态资源 --%>
+    <!-- __MOCK_PLACEHOLDER__ -->
     <fis:require id="static/lib/mod/mod.js"/>
     <fis:require id="static/lib/jquery/1.11.3/jquery.min.js" />
     <fis:require id="static/lib/bootstrap/3.3.5/bootstrap.js" />
+    <fis:require id="static/lib/handlebars/handlebars.runtime-v4.0.5.js" />
     <fis:require id="static/lib/bootstrap/3.3.5/bootstrap.scss" />
     <fis:require id="static/common/app.scss" />
     <fis:require id="static/common/app.js" />
-
-
     <fis:script>
     $(function () {
         $.MFT.activate()
     });
     </fis:script>
-    <%-- 使用<fis:styles/>标签显示<fis:require>标签收集到的所有css资源 --%>
     <fis:styles/>
 </head>
 <body>
@@ -49,7 +47,6 @@
         <li>第${status.index}个： ${item.name }---${item.age }</li>    
     	</c:forEach>
     </ul> --%>
-	<%-- 使用<fis:scripts/>标签显示<fis:require>标签收集到的所有js资源 --%>
     <fis:scripts/>
 </body>
 </html>
