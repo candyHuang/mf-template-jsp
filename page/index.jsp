@@ -26,9 +26,9 @@
 </head>
 <body>
     <div class="wrapper">
-        <%@ include file="../widget/header/header.jsp"%>
-        <%@ include file="../widget/aside/aside.jsp"%>
-
+        <link rel="import" href="widget/header/header.jsp?__inline">
+        <link rel="import" href="widget/aside/aside.jsp?__inline">
+        
         <div class="main-content">
             <!-- 顶部标签页 -->
             <section class="main-content-tabs hide">
