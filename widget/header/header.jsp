@@ -3,12 +3,11 @@
 
 <header class="main-header">
     <section class="navbar navbar-static-top" role="navigation">
-        <a href="#" class="sub-logo">魔方旅游路线管理系统</a>
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="#">
-                        <span class="glyphicon glyphicon-chevron-down"></span> 成都魔方
+                        <span class="glyphicon glyphicon-chevron-down"></span> 系统
                     </a>
                 </li>
                 <li>
@@ -31,4 +30,4 @@
     </section>
 </header>
 
-<fis:require id="widget/header/header.scss"/>
+<fis:require id="widget/header/header.css"/>

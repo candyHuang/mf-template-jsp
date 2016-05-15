@@ -11,42 +11,25 @@
 	<title>index</title>
     <!-- __MOCK_PLACEHOLDER__ -->
     <fis:require id="static/lib/mod/mod.js"/>
-    <fis:require id="static/lib/jquery/1.11.3/jquery.min.js" />
-    <fis:require id="static/lib/bootstrap/3.3.5/bootstrap.js" />
     <fis:require id="static/lib/handlebars/handlebars.runtime-v4.0.5.js" />
-    <fis:require id="static/lib/bootstrap/3.3.5/bootstrap.scss" />
-    <fis:require id="static/common/app.scss" />
-    <fis:require id="static/common/app.js" />
-    <fis:script>
-    $(function () {
-        $.MFT.activate()
-    });
-    </fis:script>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <fis:styles/>
 </head>
 <body>
     <div class="wrapper">
         <link rel="import" href="widget/header/header.jsp?__inline">
-        <link rel="import" href="widget/aside/aside.jsp?__inline">
-        
         <div class="main-content">
-            <!-- 顶部标签页 -->
-            <section class="main-content-tabs hide">
-                <ul class="nav nav-tabs nav-blue draggable"></ul>
-            </section>
-            <!-- 内容区 -->
-            <section class="content hide">
-                <div class="tab-content"></div>
-            </section>
-            <!-- 首页内容 -->
-            <section class="index-content"></section>
+            <p>内容区</p>
+            <ul>
+                <c:forEach var="item" items="${list}" varStatus="status">    
+                <li>第${status.index}个： ${item.name }---${item.age }</li>    
+                </c:forEach>
+            </ul>
         </div>
     </div>
-    <%-- <ul>
-		<c:forEach var="item" items="${list}" varStatus="status">    
-        <li>第${status.index}个： ${item.name }---${item.age }</li>    
-    	</c:forEach>
-    </ul> --%>
+    
+    <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <fis:scripts/>
 </body>
 </html>

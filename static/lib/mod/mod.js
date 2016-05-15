@@ -16,7 +16,7 @@
         switch (typeof id){
             case 'string':
                 if(defined.hasOwnProperty(id)){
-                    throw new Error('cannot redeclare module [' + id + ']');
+                    window.console && console.log('cannot redeclare module [' + id + ']')
                 } else {
                     if(typeof factory === 'function'){
                         factories[id] = factory;

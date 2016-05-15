@@ -1,5 +1,5 @@
 {
-    "url_1": {
+    "/url_1": {
         "ctitle": "@ctitle",
         "csentence": "@csentence",
         "cparagraph": "@cparagraph",
@@ -8,7 +8,7 @@
         "natrue": "@natural",
         "float": "@float"
     },
-    "url_2": {
+    "/url_2": {
         "list|1-10": [{
             "id": "@id",
             "integer": "@integer(10000)",
